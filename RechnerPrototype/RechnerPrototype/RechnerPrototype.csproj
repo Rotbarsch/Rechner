@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81DEC3EC-AF76-456B-8D57-5120BD6EE963}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RechnerPrototype</RootNamespace>
+    <AssemblyName>RechnerPrototype</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessStyle\FlächenKörper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessStyle\FlächenKörper.Designer.cs">
+      <DependentUpon>FlächenKörper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessStyle\Grundrechenarten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessStyle\Grundrechenarten.Designer.cs">
+      <DependentUpon>Grundrechenarten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessStyle\Kreditberechnung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessStyle\Kreditberechnung.Designer.cs">
+      <DependentUpon>Kreditberechnung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessStyle\Leistungsverteilung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessStyle\Leistungsverteilung.Designer.cs">
+      <DependentUpon>Leistungsverteilung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessStyle\LogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessStyle\LogWindow.Designer.cs">
+      <DependentUpon>LogWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessStyle\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessStyle\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessStyle\MathTech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessStyle\MathTech.Designer.cs">
+      <DependentUpon>MathTech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessStyle\Prozentrechnung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessStyle\Prozentrechnung.Designer.cs">
+      <DependentUpon>Prozentrechnung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BusinessStyle\FlächenKörper.resx">
+      <DependentUpon>FlächenKörper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessStyle\Grundrechenarten.resx">
+      <DependentUpon>Grundrechenarten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessStyle\Leistungsverteilung.resx">
+      <DependentUpon>Leistungsverteilung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessStyle\LogWindow.resx">
+      <DependentUpon>LogWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessStyle\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessStyle\MathTech.resx">
+      <DependentUpon>MathTech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessStyle\Prozentrechnung.resx">
+      <DependentUpon>Prozentrechnung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
